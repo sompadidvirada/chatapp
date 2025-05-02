@@ -49,6 +49,49 @@
   .center {
     flex: 1;
     padding: 20px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .message {
+      max-width: 70%;
+      gap: 20px;
+      
+      &.own {
+        align-self: flex-end;
+        p {
+          background-color: #2b60d4;
+        }
+      }
+      
+    }
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .texts {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      p {
+        padding: 20px;
+        background-color: #1515163f;
+        border-radius: 10px;
+      }
+      img {
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+        object-fit: cover;
+        align-self: flex-end;
+      }
+      span {
+        font-size: 13px;
+      }
+    }
   }
   .bottom {
     padding: 20px;

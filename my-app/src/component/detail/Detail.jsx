@@ -62,30 +62,7 @@ const Detail = () => {
                 <img src="./download.png" alt="" className="icon"/>
             </div>
           </div>
-          <div className="photos">
-            <div className="photoItem">
-              <div className="photoDetail">
-                <img
-                  src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/2022/09/Daemon.jpg"
-                  alt=""
-                />
-                <span>photo_2024_2.png</span>
-              </div>
-                <img src="./download.png" alt="" className="icon"/>
-            </div>
-          </div>
-          <div className="photos">
-            <div className="photoItem">
-              <div className="photoDetail">
-                <img
-                  src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/2022/09/Daemon.jpg"
-                  alt=""
-                />
-                <span>photo_2024_2.png</span>
-              </div>
-                <img src="./download.png" alt="" className="icon"/>
-            </div>
-          </div>
+          
         </div>
         <div className="option">
           <div className="title">
@@ -94,6 +71,7 @@ const Detail = () => {
           </div>
         </div>
         <button>Block User</button>
+        <button className="logout">Block User</button>
       </div>
     </div>
   );

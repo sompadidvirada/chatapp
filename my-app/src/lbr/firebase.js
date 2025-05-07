@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-import { getStorage } from "firebase/storeage";
+import { getStorage } from "firebase/storage";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -18,9 +18,11 @@ const firebaseConfig = {
   appId: "1:929686346299:web:2e3a6d99cb371acb8fda1e",
   measurementId: "G-D6ZLPKMHTG",
 };
+console.log('ENV API KEY:', import.meta.env.VITE_API_KEY);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
 const analytics = getAnalytics(app);
 
 export const auth = getAuth();

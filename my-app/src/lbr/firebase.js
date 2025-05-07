@@ -18,7 +18,6 @@ const firebaseConfig = {
   appId: "1:929686346299:web:2e3a6d99cb371acb8fda1e",
   measurementId: "G-D6ZLPKMHTG",
 };
-console.log('ENV API KEY:', import.meta.env.VITE_API_KEY);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

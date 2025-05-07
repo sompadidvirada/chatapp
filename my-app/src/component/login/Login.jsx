@@ -5,7 +5,6 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../lbr/firebase";
 
 const Login = () => {
-  console.log("ENV API KEY:", import.meta.env.VITE_API_KEY);
 
   const [avatar, setAvatar] = useState({
     file: null,
